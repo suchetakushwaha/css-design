@@ -1,0 +1,290 @@
+body
+{
+ background: #000000c9;
+}
+#all{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ear1 
+{
+    width: 80px;
+    height:80px;
+    background:black;
+    border-radius: 50px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    box-shadow: inset 7px 7px 5px 0px gray;
+}
+.ear2{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50px;
+    position:absolute;
+    top: -30px;
+    left:150px;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    box-shadow: inset 7px 7px 5px 0px gray;
+
+
+}
+.head{
+    width:200px;
+    height: 150px;
+    background: white;
+    border-radius: 70px 70px 0 0;
+    position: relative;
+}
+.head::before {
+    content: " ";
+    position: absolute;
+    background: red;
+    width: 220px;
+    height: 8px;
+    position: absolute;
+    top:150px;
+    left: -10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+.eye1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: black;
+    position: absolute;
+    top: 58px;
+    left:28px;
+}
+.eye1:before{
+   
+    content: "";
+    position: absolute;
+    width:20px;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    top: 15px;
+    left: 20px;
+    animation-name: eye1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+@keyframes eye1 {
+    0%{background: white;}
+    47%{background: white;}
+    50%{background: transparent;}
+    52%{background: white;}
+    100%{background:white}
+}
+.eye2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: black;
+    position: absolute;
+    top: 58px;
+    left:110px;
+}
+.eye2:before {
+    content: "";
+    position: absolute;
+    width:35px;
+    height: 35px;
+    border-radius: 20px;
+    background: white;
+    top: 15px;
+    left: 20px;
+    animation-name: eye2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+@keyframes eye2 {
+    0%{background: white;}
+    47%{background: white;}
+    50%{background: transparent;}
+    52%{background: white;}
+    100%{background:white}
+}
+.nose {
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    top:100px;
+    left:85px;
+    border-radius: 20px;
+}
+.mouth {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent 0px 35px, black 35px 60px);
+    position: absolute;
+    top:88px;
+    left:70px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.toung{
+    width: 50px;
+    height: 50px;
+    background:red;
+    border-radius: 50px;
+    position: relative;
+    top:45px;
+    left:5px;
+    animation-name: tt;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+@keyframes tt
+{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(8px);}
+    100%{transform: translateY(0px);}
+}
+.bottom {
+    width: 200px;
+    height:120px;
+    background:darkblue;
+}
+.bottom:before{
+    content: "";
+    position:absolute;
+    width: 60px;
+    height:55px;
+    background:linear-gradient(to right, white 0px 40px,darkblue 40px 60px); ;
+    top:215px;
+    left:-58px;
+    border-radius: 60px 0 0 60px;
+}
+.bottom:after{
+    content: "";
+    position:absolute;
+    width: 60px;
+    height:55px;
+    background:linear-gradient(to right,transparent 0px 10px, darkblue 10px 20px,white 20px 60px); ;
+    top:215px;
+    left:190px;
+    border-radius: 0px 60px 60px 0px;
+}
+.hand1{
+    width:30px;
+    height: 70px;
+    background: white;
+    position: relative;
+    float: left;
+    left: 20px;
+    top:30px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 10px 0px 18px black, inset opx 10px 15px gray;
+   animation-name: hand1;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   transform-origin: top;
+}
+@keyframes hand1{
+    0%{transform: rotate(20deg);}
+    50%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+}
+.hand1:before{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background:red;
+    left:-5px;
+}
+.hand2{
+    width:30px;
+    height: 70px;
+    background: white;
+    position: relative;
+    float: right;
+    right: 25px;
+    top:30px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 10px 0px 18px black, inset opx 10px 15px gray;
+   animation-name: hand1;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   transform-origin: top;
+}
+@keyframes hand2{
+    0%{transform: rotate(20deg);}
+    50%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+}
+.hand2:before
+{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background:red;
+    left:-5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
